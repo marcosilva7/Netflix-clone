@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+* Body
+*/
+body {
+    background-image: linear-gradient(to top, #141414 88%, #121212 90%, #0a0a0a 95%, #080808 97%, #060606 100%);
+
+    background-attachment: fixed;
+    font-family: 'Work Sans', sans-serif;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#main {
+    width: 100%;
+    max-width: 80%;
+    margin: 5px auto 50px;
+}
+
+/*
+* Principal text
+*/
+header {
+    margin-top: 150px;
+}
+
+#principal-text h1 {
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 450;
+
+    text-align: center;
+}
+
+/*
+* Profile accounts
+*/
+#profiles ul {
+    list-style: none;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+ 
+.profile a {
+    text-decoration: none;
+    color: #7b7b7b;
+}
+
+.profile:hover a {
+    color: #ffff;
+}
+
+.profile a img {
+    width: 8rem;
+    border-radius: 4px;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.profile:hover img {
+    border: 2px solid #ffff;
+    transform: scale(1.010, 1.010);
+}
+
+.profile .profile-name {
+    text-align: center;
+    font-size: 16px;
+}
+
+/*
+* Profile management bottom
+*/
+
+#profile-management {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#profile-management .link-manage {
+    font-size: 16px;
+    text-decoration: none;
+    color: #969494;
+    padding: 8px;
+    border: 1.5px solid #575757;
+}
+
+#profile-management .link-manage:hover {
+    border: 1.5px solid #ffff;
+    color: #ffff;
+}
+
+@media only screen and (max-width: 400px) and (min-width: 250px) {
+    #main {
+        width: 55%;
+    }
+    header {
+        margin: 120px auto 40px;
+    }
+    .profile a img {
+        margin-top: 5px;
+    }
+    #principal-text h1{
+        font-size: 33px;
+    }
+    #profiles ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .profile-name span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    #main {
+        width: 60%;
+    }
+    header {
+        margin: 100px auto 30px;
+    }
+    #profiles ul {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .profile a img {
+        margin-top: 5px;
+    }
+    #principal-text h1{
+        font-size: 42px;
+    }
+    #profiles ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .profile-name span {
+        font-size: 17px;
+    }
+}
